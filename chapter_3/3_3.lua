@@ -1,7 +1,7 @@
 #!/usr/bin/env lua
 
 function cal(coef, x)
-    ret = 0
+    local ret = 0
     for i=1, #coef do
         ret = ret + coef[i] * x ^ (i-1)
     end
