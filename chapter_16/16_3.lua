@@ -60,7 +60,7 @@ Proxy = {
     end
 }
 
-setmetatable(Proxy, {__mode="k"})
+setmetatable(Proxy.instances, {__mode="k"})
 
 acc = Proxy.wrap(Account:new{balance=100})
 
